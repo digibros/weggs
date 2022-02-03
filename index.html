@@ -1,0 +1,439 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>mildar | Digibros</title>
+    <link rel="stylesheet" href="./assets/menu.css">
+    <link rel="stylesheet" href="./assets/IntObs.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <!-- <link rel="stylesheet" href="./assets/style.css"> -->
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="subnav flex">
+            <div class="left flex">
+                <div class="email"><i class="fas fa-envelope" style="user-select: auto;"></i>support@email.com</div>
+                <div class="addr"><i class="fas fa-map-marker-alt"></i>29 Nicolas str, New York, 987597-50</div>
+                <div class="phone"><i class="fas fa-phone-alt" style="user-select: auto;"></i> + 1800 192 168</div>
+            </div>
+            <div class="right flex">
+                    <span>Follow us - </span>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="mainnav flex">
+            <a href="index.html">
+              <div class="title">WE<span>GGS</span><img src="./img/WEGGS.png" alt=""></div>
+            </a>
+            <div class="middle flex">
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                    <a href="about.html">About</a>
+                    <!-- <div class="drop">
+                        <a href="#">Testimonials</a>
+                        <a href="#">FAQ</a>
+                        <div href="#">Gallery<i class="fas fa-chevron-right"></i>
+                            <div class="subdrop">
+                                <a href="#">columns</a>
+                                <a href="#">columns</a>
+                                <a href="#">columns</a>
+                            </div>
+                        </div>
+                        <a href="#">404 Page</a>
+                    </div> -->
+                </div>
+                <div class="dropdown">
+                    <a href="#">Products<i class="fas fa-chevron-right"></i></a>
+                    <div class="drop">
+                        <a href="shop.html">Shop</a>
+                        <a href="cart.html">Cart</a>
+                        <a href="account.html">My Account</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="blog.html">Blog</a>
+                </div>
+                <a href="where.html">Where to Buy</a>
+                <a href="contact.html">Contacts</a>
+            </div>
+            <div class="right flex">
+                <div class="search">
+                    <div class="searchbar">
+                        <input type="text" placeholder="Search">
+                        <i class="fas fa-search"></i>
+                        <div class="search-btn"></div>
+                    </div>
+                </div>
+                <div class="user">
+                    <a href="./account.html"><i class="fas fa-user"></i></a>
+                </div>
+                <div class="bag flex">
+                    <a href="./shop.html"><i class="fas fa-shopping-bag"></i></a>
+                    <div class="counter flex">0</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navbar2">
+        <div class="mainnav2 flex">
+            <div class="" id="menuBtn">
+                <div id="menu-hover"></div>
+                <div></div>
+                <div></div>
+            </div>
+              <div class="title2"><a href="index.html">WE<span>GGS</span><img src="./img/WEGGS.png" alt=""></a></div>
+        </div>
+        <div class="sidemenu" id="sideMenu">
+            <div id="menuBtnClose">
+                <i class="fal fa-times"></i>
+            </div>
+            <div class="middle">
+                <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+    
+                        <div class="new-details">
+                            <a class="new-drp" href="#">Products<i class="fas fa-chevron-right" id="spin"></i></a>
+                        <div class="new-drop">
+                            <a href="shop.html">Shop</a>
+                            <a href="cart.html">Cart</a>
+                            <a href="account.html">My Account</a>
+                        </div>
+                    </div>
+                    <script>
+                        let newD=document.querySelector('.new-details');
+                        let newDp=document.querySelector('.new-drop');
+                        let newDrp=document.querySelector('.new-drp');
+                        let newIcop=document.querySelector('#spin');
+                        newDrp.addEventListener('click',function(){
+                            newDp.classList.toggle('open');
+                            newIcop.classList.toggle('spin');
+                        })
+        
+                    </script>
+    
+                        <a href="blog.html">Blog</a>
+                        <a href="where.html">Where to Buy</a>
+                <a href="contact.html">Contacts</a>
+            </div>
+            <div class="bottom">
+                <div class="flex">
+                    <div class="bag flex">
+                        <a href="shop.html"><i class="fas fa-shopping-bag"></i>
+                        <div class="counter flex">0</div></a>
+                    </div>
+                    <div class="user">
+                        <a href="account.html"><i class="fas fa-user"></i></a>
+                    </div>
+                </div>
+                <div class="searchbar flex">
+                    <input type="text" placeholder="Type to search">
+                    <i class="fas fa-search"></i>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <section class="home">
+            <div class="owl-carousel owl-carousel2 owl-theme">
+                  <div class="item"><div class="slide-card1">
+                    <img class="one" src="./img/slider/W home slide 3.jpg" alt="">
+                    <div class="h1"><h1>Eat Good <br>Feel Good</h1>
+                    <div class="aa"><a href="about.html">Read More</a><a href="contact.html">Contact Us</a></div></div>
+                </div><img id="path" src="./img/path.svg" alt=""></div>
+                <div class="item"><div class="slide-card1">
+                    <img class="one" src="./img/slider/W home slide 4.jpg" alt="">
+                    <div class="h1"><h1>Eat Good <br>Feel Good</h1>
+                    <div class="aa"><a href="about.html">Read More</a><a href="contact.html">Contact Us</a></div></div>
+                </div><img id="path" src="./img/path.svg" alt=""></div>
+                <div class="item"><div class="slide-card1">
+                    <img class="one" src="./img/slider/W home slide 5.jpg" alt="">
+                    <div class="h1"><h1>Eat Good <br>Feel Good</h1>
+                    <div class="aa"><a href="about.html">Read More</a><a href="contact.html">Contact Us</a></div></div>
+                </div><img id="path" src="./img/path.svg" alt=""></div>
+                <div class="item"><div class="slide-card1">
+                    <img class="one" src="./img/slider/W home slide 6.jpg" alt="">
+                    <div class="h1"><h1>Eat Good <br>Feel Good</h1>
+                    <div class="aa"><a href="about.html">Read More</a><a href="contact.html">Contact Us</a></div></div>
+                </div><img id="path" src="./img/path.svg" alt=""></div>
+                <div class="item"><div class="slide-card1">
+                    <img class="one" src="./img/slider/W home slide2.jpg" alt="">
+                    <div class="h1"><h1>Eat Good <br>Feel Good</h1>
+                    <div class="aa"><a href="about.html">Read More</a><a href="contact.html">Contact Us</a></div></div>
+                </div><img id="path" src="./img/path.svg" alt=""></div>
+
+            </div>
+        </section>
+        <section class="about " id="about" >
+            <div class="column">
+              <div class="image">
+                <img src="img/img1.jpg" alt="" class="anim" data-delay=".1s" data-duration="1.5s" data-anime="ltr" />
+                <img src="img/img2.jpg" alt="" class="absolute anim" data-delay=".15s" data-duration="1s" data-anime="rtl">
+                <div class="absolute-div anim" data-delay=".2s" data-duration="0.8s" data-anime="up"><h6>Best Quality<br><span>Since</span><br><strong>1972</strong></h6></div>
+              </div>
+              <div class="content">
+                <span>About company</span>
+                <h3>Our Farm Creates
+                  the Best Dairy Products</h3>
+                <p>
+                  Maecenas eros tortor, luctus nec nisi ac, dignissim euis  urna. Aliquam id venenatis arcu. Quisque euismod tristique ullamcorper.
+                </p>
+                <ul>
+                  <li><i class="fas fa-check-circle"></i>&nbsp;&nbsp; Aliquam vehicula purus lorem</li>
+                  <li><i class="fas fa-check-circle"></i>&nbsp;&nbsp; Aliquam vehicula purus lorem</li>
+                  <li><i class="fas fa-check-circle"></i>&nbsp;&nbsp; Aliquam vehicula purus lorem</li>
+                </ul>
+                  <a href="about.html" class="btn">read more</a>
+              </div>
+            </div>
+          </section>
+          <section class="product">
+            <span>Our Products</span>
+            <h1 class="heading">Organic Milk Products</h1>
+            <p>Phasellus dapibus tempor odio in sollicitudin. Ut suscipit sem vitae diam maximus, ut tristique magna dapibus. <br> Etiam at urna tortor.</p>
+            <div class="box-container">
+              <div class="box">
+                <img src="img/img3.jpg" alt="" />
+                <h3>Cottage Cheese <br>
+                  & Cream</h3>
+                <a href="shop.html" class="btn"><i class="fas fa-chevron-right"></i></a>
+              </div>
+              <div class="box">
+                <img src="img/img4.jpg" alt="" />
+                <h3>Cottage Cheese <br>
+                  & Cream</h3>
+                <a href="shop.html" class="btn"><i class="fas fa-chevron-right"></i></a>
+              </div>
+              <div class="box">
+                <img src="img/img5.jpg" alt="" />
+                <h3>Cottage Cheese <br>
+                  & Cream</h3>
+                <a href="shop.html" class="btn"><i class="fas fa-chevron-right"></i></a>
+              </div>
+            </div>
+        </section>
+        <section class="main-product">
+                <div class="main-product-div">
+                    <div class="left-product">
+                        <div class="one">
+                            <h1>Our products <span>are based</span>
+                                on high quality milk</h1>
+                                <p>In molestie scelerisque aliquet. Vestibulum sed pretium lacus, at volutpat nibh. Phasellus metus turpis, mollis sed eros sodales, egestas ultricies augue.</p>
+                                <div class="percentage">0.5%</div>
+                                <div class="percentage">1.5%</div>
+                                <div class="percentage">2.5%</div>
+                                <div class="percentage">3.5%</div>
+                                <div class="percentage">6%</div>
+                            </div>
+                            <div class="two">
+                                <h2>Environmentally <span>friendly</span></h2>
+                                <p>Sed consectetur, est a rhoncus cursus, nulla sapien dictum erat, sit amet tempus ante elit sed lacus. Praesent pharetra placerat elit, eu dictum justo faucibus nec.</p>
+                            </div>
+                            <a href="shop.html">Read More</a>
+                    </div>
+                    <div class="product-img"><img src="./img/WEGGS.png" alt=""></div>
+                    <div class="right-product">
+                        <div>
+                            <img src="./img/egg-solid.svg" alt="">
+                            <div class="content">
+                                <h1>100% Organic
+                                    Products</h1>
+                                    <p>Aenean condimentum, enim
+                                        quis mattis vehicula</p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="./img/egg-solid.svg" alt="">
+                            <div class="content">
+                                <h1>Recommended
+                                    for babies</h1>
+                                    <p>Integer enim erat, interdum eu
+                                        vehicula eget, congue eget ante</p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="./img/egg-solid.svg" alt="">
+                            <div class="content">
+                                <h1>High Quality
+                                    Raw Milk</h1>
+                                    <p>Ut eget ipsum at ligula congue
+                                        malesuada finibus in tortor</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              <img id="path" src="./img/path.svg" alt="">
+          </section>
+          <section class="all-prods">
+              <h2>About company</h2>
+              <h1>Popular Milk Products</h1>
+              <p>Suspendisse in nunc nec velit facilisis posuere eu eu purus. Nunc ullamcorper dolor sodales sapien ultricies semper donec est ex.</p>
+                <div class="prod-tag">
+                    <div>Cheese</div>
+                    <div>Yogurts</div>
+                    <div>Milk</div>
+                </div>
+              <div class="prods">
+                <div>
+                    <img src="./img/products_01-600x600.jpg" alt="">
+                    <h3>Camembert</h3>
+                    <h4 class="price">$13.99</h4>
+                    <a href="shop.html"><i class="fas fa-shopping-bag"></i></a>
+                </div>
+                <div>
+                    <img src="./img/products_01-600x600.jpg" alt="">
+                    <h3>Brie</h3>
+                    <h4 class="price">$17.99</h4>
+                    <a href="shop.html"><i class="fas fa-shopping-bag"></i></a>
+                </div>
+                <div>
+                    <img src="./img/products_01-600x600.jpg" alt="">
+                    <h3>Chedder</h3>
+                    <h4 class="price">$25.00</h4>
+                    <a href="shop.html"><i class="fas fa-shopping-bag"></i></a>
+                </div>
+                <div>
+                    <img src="./img/products_01-600x600.jpg" alt="">
+                    <h3>Gorgonzola</h3>
+                    <h4 class="price">$17.99</h4>
+                    <a href="shop.html"><i class="fas fa-shopping-bag"></i></a>
+                </div>
+          </div>
+          <a href="shop.html">Buy Now</a>
+          </section>
+          <section class="reg-control">
+              <div class="img"><img src="./img/img1.jpg" alt=""><img id="vpath" src="./img/vpath.svg " alt=""></div>
+              <div class="content">
+                  <h1><span>Regular Control</span><br>
+                    Quality Monitoring</h1>
+                    <p>Maecenas eu massa varius, ornare urna vitae, sagittis odio. Etiam vel mollis elit. Phasellus vitae libero dictum, dictum augue nec, varius massa.</p>
+                    <div class="three">
+                        <div><img src="./img/thermometer-three-quarters-solid.svg" alt=""><br>
+                            Reliable
+                            Pasteurization</div>
+                            <div><img src="./img/microscope-solid.svg" alt=""><br>
+                                Laboratory
+                                Testing</div>
+                                <div><img src="./img/thermometer-three-quarters-solid.svg" alt=""><br>
+                                    Pure Cultures
+                                    of Bacteria
+                                    </div>
+                    </div>
+                    <a href="blog.html">Read More</a>
+                </div>
+                <div class="bot-abs">
+                    <div>
+                        <h1>34000</h1>
+                        <h3>Hectares of forage land</h3>
+                    </div>
+                    <div>
+                        <h1>34000</h1>
+                        <h3>Hectares of forage land</h3>
+                    </div>
+                    <div>
+                        <h1>34000</h1>
+                        <h3>Hectares of forage land</h3>
+                    </div>
+
+                </div>
+          </section>
+          <section class="testimonials">
+              <h3>Testimonials</h3>
+              <h1>What Our Clients Say</h1>
+              <div class="owl-carousel owl-theme">
+                <div class="item"><div class="slide-card1">
+                    <div class="slide-content">
+                        <p>
+                            Morbi viverra volutpat ex, id pellentesque felis volutpat eu. Duis et tellus imperdiet, lacinia risus id, tincidunt ipsum. Integer euismod elit vel nibh commodo, at consequat nisl rhoncus. Etiam mattis.</p>
+                            <div class="img">
+                                <img src="./img/testimonials-11-140x140.jpg" alt="">
+                                <h3>Name Surname</h3>
+                            </div>
+                        </div>
+                  </div></div>
+                  <div class="item"><div class="slide-card1">
+                    <div class="slide-content">
+                        <p>
+                            Morbi viverra volutpat ex, id pellentesque felis volutpat eu. Duis et tellus imperdiet, lacinia risus id, tincidunt ipsum. Integer euismod elit vel nibh commodo, at consequat nisl rhoncus. Etiam mattis.</p>
+                            <div class="img">
+                                <img src="./img/testimonials-11-140x140.jpg" alt="">
+                                <h3>Name Surname</h3>
+                            </div>
+                        </div>
+                  </div></div>
+                  <div class="item"><div class="slide-card1">
+                    <div class="slide-content">
+                        <p>
+                            Morbi viverra volutpat ex, id pellentesque felis volutpat eu. Duis et tellus imperdiet, lacinia risus id, tincidunt ipsum. Integer euismod elit vel nibh commodo, at consequat nisl rhoncus. Etiam mattis.</p>
+                            <div class="img">
+                                <img src="./img/testimonials-11-140x140.jpg" alt="">
+                                <h3>Name Surname</h3>
+                            </div>
+                        </div>
+                  </div></div>
+                  
+            </div>
+          </section>
+          <section class="gallery">
+              <div class="in-gallery">
+                  <div><img src="./img/gallery_01-480x480.jpg" alt=""></div>
+                  <div><img src="./img/gallery_01-480x480.jpg" alt=""></div>
+                  <div><img src="./img/gallery_01-480x480.jpg" alt=""></div>
+                  <div><img src="./img/gallery_01-480x480.jpg" alt=""></div>
+              </div>
+              <a href="about.html">View Gallery</a>
+          </section>
+          <footer>
+            <div class="title">WE<span>GGS</span><img src="./img/WEGGS.png" alt=""></div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum porro doloribus veniam quam quas vel modi ea, ipsam dolorem ullam!</p>
+            <section class="div">
+                <div><h2>Write us</h2>
+                    <p>mildar@like-themes.com</p>
+                </div>
+                <div><h2>Address</h2>
+                    <p>975 Liberty Ave, Union, NJ 07083, USA</p>
+                </div>
+                <div><h2>Phone</h2>
+                    <p>+49078-039-23-11</p>
+                </div>
+            </section>
+            <div class="social">
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+            </div>
+            <section class="bottom">
+                Like-themes © All Rights Reserved - 2020 - Purchase
+            </section>
+        </footer>
+
+    </div>
+    <script src="./assets/IntObs.js"></script>
+    <script src="./assets/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      $(document).ready(function () {
+          $(".owl-carousel").owlCarousel({
+              items:1,
+              loop:true,
+              nav:true,
+              dots:true,
+              autoplay:true,
+              autoplaySpeed:1000,
+              smartSpeed:1500,
+              autoplayHoverPause:true
+          });
+      });
+    </script>
+</body>
+</html>

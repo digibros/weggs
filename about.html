@@ -1,0 +1,350 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>mildar | Digibros</title>
+    <link rel="stylesheet" href="./assets/menu.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/contact.css">
+    <link rel="stylesheet" href="./assets/about.css">
+    <!-- <link rel="stylesheet" href="./assets/style.css"> -->
+
+</head>
+<body>
+  <div class="navbar">
+    <div class="subnav flex">
+        <div class="left flex">
+            <div class="email"><i class="fas fa-envelope" style="user-select: auto;"></i>support@email.com</div>
+            <div class="addr"><i class="fas fa-map-marker-alt"></i>29 Nicolas str, New York, 987597-50</div>
+            <div class="phone"><i class="fas fa-phone-alt" style="user-select: auto;"></i> + 1800 192 168</div>
+        </div>
+        <div class="right flex">
+                <span>Follow us - </span>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+    <div class="mainnav flex">
+        <a href="index.html">
+          <div class="title">WE<span>GGS</span><img src="./img/WEGGS.png" alt=""></div>
+        </a>
+        <div class="middle flex">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a href="about.html">About</a>
+                <!-- <div class="drop">
+                    <a href="#">Testimonials</a>
+                    <a href="#">FAQ</a>
+                    <div href="#">Gallery<i class="fas fa-chevron-right"></i>
+                        <div class="subdrop">
+                            <a href="#">columns</a>
+                            <a href="#">columns</a>
+                            <a href="#">columns</a>
+                        </div>
+                    </div>
+                    <a href="#">404 Page</a>
+                </div> -->
+            </div>
+            <div class="dropdown">
+                <a href="#">Products<i class="fas fa-chevron-right"></i></a>
+                <div class="drop">
+                    <a href="shop.html">Shop</a>
+                    <a href="cart.html">Cart</a>
+                    <a href="account.html">My Account</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="blog.html">Blog</a>
+            </div>
+            <a href="where.html">Where to Buy</a>
+            <a href="contact.html">Contacts</a>
+        </div>
+        <div class="right flex">
+            <div class="search">
+                <div class="searchbar">
+                    <input type="text" placeholder="Search">
+                    <i class="fas fa-search"></i>
+                    <div class="search-btn"></div>
+                </div>
+            </div>
+            <div class="user">
+                <a href="./account.html"><i class="fas fa-user"></i></a>
+            </div>
+            <div class="bag flex">
+                <a href="./shop.html"><i class="fas fa-shopping-bag"></i></a>
+                <div class="counter flex">0</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="navbar2">
+    <div class="mainnav2 flex">
+        <div class="" id="menuBtn">
+            <div id="menu-hover"></div>
+            <div></div>
+            <div></div>
+        </div>
+          <div class="title2"><a href="index.html">WE<span>GGS</span><img src="./img/WEGGS.png" alt=""></a></div>
+    </div>
+    <div class="sidemenu" id="sideMenu">
+        <div id="menuBtnClose">
+            <i class="fal fa-times"></i>
+        </div>
+        <div class="middle">
+            <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+
+                    <div class="new-details">
+                      <a class="new-drp" href="#">Products<i class="fas fa-chevron-right" id="spin"></i></a>
+                  <div class="new-drop">
+                      <a href="shop.html">Shop</a>
+                      <a href="cart.html">Cart</a>
+                      <a href="account.html">My Account</a>
+                  </div>
+              </div>
+              <script>
+                  let newD=document.querySelector('.new-details');
+                  let newDp=document.querySelector('.new-drop');
+                  let newDrp=document.querySelector('.new-drp');
+                  let newIcop=document.querySelector('#spin');
+                  newDrp.addEventListener('click',function(){
+                      newDp.classList.toggle('open');
+                      newIcop.classList.toggle('spin');
+                  })
+  
+              </script>
+
+                    <a href="blog.html">Blog</a>
+                    <a href="where.html">Where to Buy</a>
+            <a href="contact.html">Contacts</a>
+        </div>
+        <div class="bottom">
+            <div class="flex">
+                <div class="bag flex">
+                    <a href="shop.html"><i class="fas fa-shopping-bag"></i>
+                    <div class="counter flex">0</div></a>
+                </div>
+                <div class="user">
+                    <a href="account.html"><i class="fas fa-user"></i></a>
+                </div>
+            </div>
+            <div class="searchbar flex">
+                <input type="text" placeholder="Type to search">
+                <i class="fas fa-search"></i>
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="main">
+        <section class="top">
+            <img id="path" src="./img/path.svg" alt="">
+            <h1>About</h1>
+        </section>
+        <section class="main-about">
+            <div class="column">
+              <div class="image">
+                <img src="img/img3.jpg" alt="" />
+              </div>
+              <div class="content">
+                <h3>Where we started</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+                  facilis, nam earum sed nostrum explicabo odio est voluptate fugit
+                  dolor.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro
+                  magnam adipisci fugiat repellendus earum nulla aliquid amet quasi
+                  magni natus? Quasi expedita praesentium voluptate excepturi rem iste
+                  eos! Dignissimos, fugiat?
+                </p>
+                <div class="buttons">
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              
+              <div class="content">
+                <h3>what we do?</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+                  facilis, nam earum sed nostrum explicabo odio est voluptate fugit
+                  dolor.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro
+                  magnam adipisci fugiat repellendus earum nulla aliquid amet quasi
+                  magni natus? Quasi expedita praesentium voluptate excepturi rem iste
+                  eos! Dignissimos, fugiat?
+                </p>
+                <div class="buttons">
+                </div>
+              </div>
+              <div class="image">
+                <img src="img/img4.jpg" alt="" />
+              </div>
+            </div>
+            <div class="column">
+                <div class="image">
+                  <img src="img/img5.jpg" alt="" />
+                </div>
+                <div class="content">
+                  <h3>what is our goal?</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+                    facilis, nam earum sed nostrum explicabo odio est voluptate fugit
+                    dolor.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro
+                    magnam adipisci fugiat repellendus earum nulla aliquid amet quasi
+                    magni natus? Quasi expedita praesentium voluptate excepturi rem iste
+                    eos! Dignissimos, fugiat?
+                  </p>
+                  <div class="buttons">
+                  </div>
+                </div>
+              </div>
+          </section>
+          <section class="gallery">
+            <h1 class="heading">Gallery</h1>
+            <div class="box-container">
+              <div class="box">
+                <img src="img/img4.jpg" alt="" />
+              </div>
+              <div class="box">
+                <img src="img/img4.jpg" alt="" />
+              </div>
+              <div class="box">
+                <img src="img/img4.jpg" alt="" />
+              </div>
+              <div class="box">
+                <img src="img/img4.jpg" alt="" />
+              </div>
+              <div class="box">
+                <img src="img/img4.jpg" alt="" />
+              </div>
+              <div class="box">
+                <img src="img/img4.jpg" alt="" />
+              </div>
+            </div>
+          </section>
+          <section class="faq">
+            <h1>FAQ</h1>
+            <div class="col">
+              <div class="tabs">
+                <div class="tab">
+                  <input type="radio" id="rd1" name="rd">
+                  <label class="tab-label" for="rd1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, rem.</label>
+                  <div class="tab-content">
+                    <i class="fas fa-check-circle"></i>&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias cupiditate, nulla aliquam molestiae soluta aut. <br>
+                    <i class="fas fa-check-circle"></i>&nbsp;&nbsp; Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quae saepe deserunt veritatis magni blanditiis dolores a, eaque iusto officia alias? Ipsa saepe deleniti accusamus accusantium quod laudantium placeat explicabo.
+                  </div>
+                </div>
+                <div class="tab">
+                  <input type="radio" id="rd2" name="rd">
+                  <label class="tab-label" for="rd2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, rem.</label>
+                  <div class="tab-content">
+                    <i class="fas fa-check-circle"></i>&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias cupiditate, nulla aliquam molestiae soluta aut. <br>
+                    <i class="fas fa-check-circle"></i>&nbsp;&nbsp; Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quae saepe deserunt veritatis magni blanditiis dolores a, eaque iusto officia alias? Ipsa saepe deleniti accusamus accusantium quod laudantium placeat explicabo.
+                  </div>
+                </div>
+                <div class="tab">
+                  <input type="radio" id="rd3" name="rd">
+                  <label class="tab-label" for="rd3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, rem.</label>
+                  <div class="tab-content">
+                    <i class="fas fa-check-circle"></i>&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias cupiditate, nulla aliquam molestiae soluta aut. <br>
+                    <i class="fas fa-check-circle"></i>&nbsp;&nbsp; Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quae saepe deserunt veritatis magni blanditiis dolores a, eaque iusto officia alias? Ipsa saepe deleniti accusamus accusantium quod laudantium placeat explicabo.
+                  </div>
+                </div>
+                <div class="tab">
+                  <input type="radio" id="rd4" name="rd">
+                  <label class="tab-label" for="rd4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, rem.</label>
+                  <div class="tab-content">
+                    <i class="fas fa-check-circle"></i>&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias cupiditate, nulla aliquam molestiae soluta aut. <br>
+                    <i class="fas fa-check-circle"></i>&nbsp;&nbsp; Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quae saepe deserunt veritatis magni blanditiis dolores a, eaque iusto officia alias? Ipsa saepe deleniti accusamus accusantium quod laudantium placeat explicabo.
+                  </div>
+                </div>
+                <div class="tab">
+                  <input type="radio" id="rd5" name="rd">
+                  <label class="tab-label" for="rd5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, rem.</label>
+                  <div class="tab-content">
+                    <i class="fas fa-check-circle"></i>&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias cupiditate, nulla aliquam molestiae soluta aut. <br>
+                    <i class="fas fa-check-circle"></i>&nbsp;&nbsp; Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quae saepe deserunt veritatis magni blanditiis dolores a, eaque iusto officia alias? Ipsa saepe deleniti accusamus accusantium quod laudantium placeat explicabo.
+                  </div>
+                </div>
+                <div class="tab">
+                  <input type="radio" id="rd6" name="rd">
+                  <label for="rd6" class="tab-close">Close others &times;</label>
+                </div>
+              </div>
+            </div>
+          </section>
+ 
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="title">WE<span>GGS</span><img src="./img/WEGGS.png" alt=""></div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum porro doloribus veniam quam quas vel modi ea, ipsam dolorem ullam!</p>
+        <section class="div">
+            <div><h2>Write us</h2>
+                <p>mildar@like-themes.com</p>
+            </div>
+            <div><h2>Address</h2>
+                <p>975 Liberty Ave, Union, NJ 07083, USA</p>
+            </div>
+            <div><h2>Phone</h2>
+                <p>+49078-039-23-11</p>
+            </div>
+        </section>
+        <div class="social">
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"></i>
+        </div>
+        <section class="bottom">
+            Like-themes © All Rights Reserved - 2020 - Purchase
+        </section>
+    </footer>
+
+</div>
+<script src="./assets/app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+  $(document).ready(function () {
+      $(".owl-carousel").owlCarousel({
+          items:1,
+          loop:true,
+          nav:true,
+          dots:true,
+          autoplay:true,
+          autoplaySpeed:1000,
+          smartSpeed:1500,
+          autoplayHoverPause:true
+      });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+.main .profile{
+    margin-top:10rem;
+    margin-bottom: 5rem;
+}
+.main .profile h1{
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--two);
+}
+.main .profile .profile-card{
+    width: fit-content;
+    margin: 1rem auto;
+    font-size: 1.1rem;
+    text-align: justify;
+    display: grid;
+    padding: 0rem 2rem;
+}
+.main .profile .profile-card img{
+    width: 20rem;
+    display: block;
+    margin:1rem auto;
+    border-radius: 100%;
+}
+.main .profile .profile-card h2{
+    text-align: center;
+    color: var(--two);
+}
+.main .profile .profile-card a{
+    text-decoration: none;
+    color:var(--two);
+    padding:.8rem 1.5rem;
+    border-radius: 3rem;
+    background-color: var(--one);
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: block;
+    width: fit-content;
+    margin:2rem 0rem 0rem 0rem;
+}
+.main .profile .profile-card p{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    color: var(--two);
+}
+.main .profile .profile-card p span{
+    color: var(--two);
+}
+@media (max-width: 767px){
+    .main .profile .profile-card img{
+        width: 15rem;
+        display: block;
+        margin:1rem auto;
+    }
+    .main .profile .profile-card{
+        padding: 0rem 1rem;
+        font-size: 1rem;
+    }
+    .main .profile .profile-card p{
+        flex-flow: column;
+    }
+}

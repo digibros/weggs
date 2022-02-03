@@ -1,0 +1,102 @@
+:root{
+    --one:#e8bc5a;
+    --two:#0A306C;
+}
+.main .top h1{
+    font-size: 3rem;
+    padding-top: 5rem;
+    text-align: center;
+    color:white;
+}
+.top{
+    height: 60vh;
+    /* background-color:#F2F0EA; */
+    position: relative;
+    overflow: hidden;
+}
+.top::after{
+    width:100vw;
+    content:"";
+    position: absolute;
+    height:60vh;
+    background:url(./../img/slider/W\ home\ slide\ 6.jpg) fixed;
+    background-repeat: no-repeat;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+}
+.top #path{
+    z-index:150;
+    position: absolute;
+    bottom:-1px ;
+    left: 0;
+    width: 100%;
+}
+@media (max-width:840px){
+    #path{
+        display: initial;
+    }
+  }
+.divs{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    text-align: center;
+    color: var(--two)
+}
+.divs h2{
+    font-size: 2rem;
+    color:var(--one)
+}
+iframe{
+    width: 100%;
+    margin: 5rem 0rem;
+}
+form{
+    margin:0 auto;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 3rem;
+}
+form h1{
+    font-size: 2.2rem;
+    color:var(--one);
+    text-align: center;
+}
+form input,textarea{
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid var(--one);
+    background: none;
+    font-size: 1.1rem;
+}
+form input[type=submit]{
+    background: var(--one);
+    font-weight: 600;
+    color: white;
+    outline: none;
+    border: none;
+    width: 50%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+@media (max-width:940px){
+    .divs{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 1rem;
+    }
+    form{
+        margin:0 auto;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 3rem;
+    }
+}

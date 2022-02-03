@@ -1,0 +1,368 @@
+:root{
+    --one:#e8bc5a;
+    --two:#0A306C;
+}
+
+.top::after{
+    width:100vw;
+    content:"";
+    position: absolute;
+    height:60vh;
+    background:url(./../img/slider/W\ home\ slide2.jpg);
+    background-repeat: no-repeat;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    opacity: .7;
+}
+
+.main .top h1{
+    font-size: 3rem;
+    padding-top: 5rem;
+    text-align: center;
+    color:var(--two);
+}
+ul.pagination{
+    justify-content: center;
+}
+ul.pagination a{
+    color: #0A306C !important;
+}
+
+/* left aside */
+
+.main{
+    /* width: 100vh; */
+    height: auto;
+    display: flex;
+
+}
+
+.left-aside{
+    width: 43vw;
+    margin: 20px;
+    margin-left: 60px;
+    display: inline-block;
+}
+
+.left-cart{
+ 
+     border-radius : 25px;
+     background-color :rgb(230, 234, 235); 
+}
+
+.left-heading{
+    
+     color : rgb(15, 17, 134);
+     display: flex;
+     justify-content: center;
+     font-weight: 700;
+     margin-top: 16px;
+     padding-top: 25px;
+     /* margin-bottom: 36px; */
+     font-size: 20px;
+}
+
+.left-cart p{
+    padding-top: 33px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+
+/* left search */
+
+.left-search{
+    background-color :var(--two);
+    /* padding: 45px 20px; */
+   padding-left: 1px;
+   padding-right: 1px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    color: var(--two);
+    display: flex;
+    justify-content: center;
+}
+
+.left-search input{
+    
+      width: 80%;
+      padding: 15px;
+     border-radius: 56px;
+     border : none;
+}
+
+/* .left-search span{
+    display: inline-block;
+    background-color: yellow;
+    padding-right: 55px;
+    height: 56px;
+    border-radius: 56px;
+  
+
+} */
+
+
+/* list */
+
+.left-list{
+    border-radius : 25px;
+    margin-top: 60px;
+    background-color :rgb(230, 234, 235); 
+}
+
+.list{
+       
+     padding-left: 40px;
+     text-decoration: none;
+     list-style: none;
+     padding-top: 20px;
+     padding-bottom: 26px;
+}
+
+.list li{
+    margin-top: 10px;
+    color :var(--two);
+    font-weight: 500;
+}
+.list li i{
+    margin-right: 5px !important;
+    color : var(--one) !important;
+}
+
+
+/* filter */
+
+.left-filter{
+    border-radius : 25px;
+    margin-top: 60px;
+    background-color :rgb(230, 234, 235); 
+}
+
+.main .left{
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    /* margin: 12px; */
+    /* margin-left:16px;
+    margin-right: 16px; */
+    margin-top: 35px;
+    padding-bottom: 35px;
+    padding: 26px;
+    align-items: center;
+}
+
+.main .left input{
+    background-color: var(--one);
+    color : var(--one);;
+    width: 80%;
+}
+
+.main .left p{
+    display: flex;
+    font-size: 15px;
+    margin: 15px;
+    font-weight: 400;
+    justify-content: center;
+}
+
+.main .left button{
+    background-color : var(--one);
+    padding: 1rem 0.325rem;
+    width : 50%;
+    justify-content: center;
+    display: flex;
+    border-radius: 26px;
+    border: none;
+    color : var(--two);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* left-tags */
+
+.left-tags{
+    border-radius : 25px;
+    margin-top: 60px;
+    background-color :rgb(230, 234, 235);  
+}
+
+.tags{
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ro{
+    display: flex !important;
+    justify-content: space-evenly !important;
+    flex-direction: row !important;
+    margin: 6px;
+}
+
+.ro div{
+    color : var(--two);
+    font-weight: 600;
+    padding: 0.4rem;
+    background-color: white;
+    border-radius: 15px;
+    font-size: 14px;
+}
+
+
+/* right aside */
+
+.right-aside{
+     flex-grow: 1;
+    height: auto;
+}
+
+.rig{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 250px;
+    
+}
+
+.rights{
+    width: 15vw;
+      height: 70px;
+      display: flex;
+      flex-direction: column;
+      margin: 10px;
+      border-color: lightgrey !important;
+      border-radius: 20px;
+      transition: 0.2s color ease-in-out;
+}
+
+.rights:hover{
+    border-color: 1px solid yellow !important;
+}
+
+.rights img{
+    height: 40%;
+    width: 80%;
+    transition: 0.7s;
+
+    margin: auto;
+}
+
+.rights img:hover{
+    transform: scale(1.2);
+}
+
+.rig{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 28px;
+}
+
+.tr{
+    display: flex;
+    justify-content: space-between;
+    margin: 21px;
+}
+
+.back{
+    padding: 1rem;
+    background-color: var(--one);
+    border-radius: 50%;
+    color : var(--two);
+    transition: 1s ease-in-out;
+}
+
+.name{
+    color :var(--two);
+    font-weight: 800;
+}
+
+.doll{
+    color: var(--one);
+    font-weight: 800;
+}
+
+.tryt{
+    /* padding: 1rem;
+    cursor: pointer;
+    margin-left: -42px;
+    border-radius: 45px;
+    border: none;
+    background: var(--one); */
+    padding: 1.5rem;
+    cursor: pointer;
+    margin-left: -59px;
+    border-radius: 50%;
+    border: none;
+    background: var(--one);
+}
+
+.tryt i{
+    color : var(--two)
+}
+
+.rights{
+    width: auto !important;
+    height: 30%;
+    border: 1px solid burlywood;
+}
+
+.rights img{
+    height: 57% !important;
+    width: 88% !important;
+}
+
+.sorting{
+    display: flex;
+    justify-content: space-between;
+    margin: 2px;
+    padding: 1rem;
+    background-color: #f5f5f5;
+    border-radius: 45px;
+}
+
+.main{
+    margin-top: 10rem;
+}
+@media only screen and (max-width: 1000px){
+    .main{
+        margin-top: 1rem;
+    }
+    .left-aside{
+     
+        display: none !important;
+        padding: 1rem;
+    }
+     
+     .rig{
+         flex-wrap: wrap;
+     }
+
+     .rights{
+         width: 40vw;
+     }
+}
+.left-filter{
+    padding-bottom: 2rem;
+}
+.left-filter input.range{
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+}
+.left-filter button.button{
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    margin-bottom: 1rem;
+}
+.left-filter p{
+    text-align: center;
+    margin-top: 1rem;
+}
+footer .title img,.navbar2 .title2 img,.navbar .title img{
+    transform: translateY(0);
+}

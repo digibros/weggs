@@ -1,0 +1,174 @@
+:root{
+    --one:#e8bc5a;
+    --two:#0A306C;
+}
+.main .top h1{
+    font-size: 3rem;
+    padding-top: 5rem;
+    text-align: center;
+    color:var(--two);
+}
+.top{
+    height: 60vh;
+    /* background-color:#F2F0EA; */
+    position: relative;
+    overflow: hidden;
+}
+.top::after{
+    width:100vw;
+    content:"";
+    position: absolute;
+    height:60vh;
+    background:url(./../img/slider/W\ home\ slide\ 3.jpg) fixed;
+    background-repeat: no-repeat;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+}
+.top #path{
+    z-index:150;
+    position: absolute;
+    bottom:-1px ;
+    left: 0;
+    width: 100%;
+}
+@media (max-width:840px){
+    #path{
+        display: initial;
+    }
+  }
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.searchTerm {
+    width: 100%;
+    border: 3px solid var(--one);
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+}
+
+.searchTerm:focus{
+    color: var(--two);
+}
+
+.searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid var(--one);
+    background: var(--one);
+    text-align: center;
+    color: var(--two);
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+.wrap{
+    width: 60%;
+    margin: 3rem auto;
+    padding: 1rem;
+}
+.wrap input{
+    height: 36px;
+}
+.wrap input::placeholder{
+    color: var(--two);
+    opacity: 0.6;
+}
+
+
+
+
+.where-cards .super-card {
+    width: 70%;
+    margin: 2rem auto;
+    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.355);
+    border-radius: 1rem;
+    
+    padding: 3rem;
+}
+.where-cards .card{
+    display: grid;
+    grid-template-columns:.8fr .2fr;
+}
+.where-cards .super-card button{
+    outline: none;
+    border: none;
+    color: var(--two);
+    background-color: var(--one);
+    padding: .7rem 2.5rem;
+    font-weight: 600;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+.where-cards .card h1{
+    font-size: 2rem;
+    line-height: 0rem;
+    color: var(--two);
+}
+.where-cards .card h2{
+    color: var(--two);
+    line-height: 1rem;
+    font-size: 1.3rem;
+}
+.where-cards .card p{
+    color: var(--two);
+    font-size: 1.1rem;
+}
+.where-cards .card p a{
+    text-decoration: none;
+    color: var(--two);
+}
+.where-cards .card .more h3{
+    color: var(--two);
+    font-size: 1.5rem;
+    line-height: 0rem;
+}
+.where-cards .card .more span i{
+    color: var(--two);
+    padding-right: 1rem;
+}
+.where-cards .card .more span{
+    color: var(--two);
+    display: block;
+    margin: 5px;
+    font-size: 1.1rem;
+}
+
+@media (max-width:700px){
+    .wrap{
+        width: 80%;
+        margin: 3rem auto;
+        padding: 1rem;
+    }
+    .where-cards .super-card {
+        width: 80%;
+        margin: 1rem auto;
+        box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.355);
+        border-radius: 5px;
+        
+        padding: 1rem;
+    }
+    .where-cards .card{
+
+        display: grid;
+        grid-template-columns:1fr;
+    }
+    .where-cards .super-card button{
+        width: 70%;
+        display: block;
+        margin: 1rem auto;
+        padding: 1rem 2.5rem;
+
+    }
+}

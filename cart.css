@@ -1,0 +1,285 @@
+:root{
+    --one:#e8bc5a;
+    --two:#0A306C;
+    --three:#fff;
+}
+
+.top::after{
+    width:100vw;
+    content:"";
+    position: absolute;
+    height:70vh;
+    background:url(./../img/slider/W\ home\ slide2.jpg) fixed;
+    background-repeat: no-repeat;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    opacity: .7;
+    filter: brightness(50%);
+}
+.main{
+    padding-top: 5rem;
+}
+.main .top h1{
+    font-size: 3rem;
+    padding-top: 5rem;
+    text-align: center;
+    color:white;
+    font-family:  'Asap','Poppins','Roboto' ;
+}
+@media (max-width:840px){
+    #path{
+        display: initial;
+    }
+  }
+.main .cart .items1{
+    min-height:80px;
+    margin: 50px auto;
+    /* border-radius:30px ; */
+    /* background: rgba(228, 228, 228, 0.712); */
+    width:90vw;
+}
+.main .cart .items1>div{
+    margin: 26px 40px;
+    width: max-content;
+    color: var(--two);
+    font-family:  'Asap','Poppins','Roboto' ;
+    font-weight: bold;   
+    font-size: 1.1em;
+}
+
+.buttonBar{
+    min-height:30px;
+    margin: 0px auto 40px auto;
+    width: 90vw;
+}
+.buttonBar > *{
+    margin:5px 0 5px 10px;
+}
+.buttonBar .btn{
+    display: inline-block;
+    padding: 1rem 2.5rem !important;
+    background-color: var(--one);
+    color:var(--two);
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5rem;
+    overflow: hidden;
+    transition: all .3s ease;
+    font-weight: bolder;
+}
+.main .cart .items1>table{
+    /* font-family: Arial, Helvetica, sans-serif; */
+    border-collapse: collapse;
+    width: 100%;
+}
+.main .cart .items1>table td, .main .cart .items1>table>th {
+    border: 1px solid rgb(238, 238, 238);
+    padding: 8px;
+}
+.main .cart .items1>table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #e8bb5a21;
+    color: rgb(0, 0, 0);
+}
+.items1 .quantity input{
+    min-width:70px ;
+    max-width:100px ;
+    border: 1px solid #aaaaaa21;
+    border-radius:10px;
+    justify-content: space-between;
+    height: 50px;
+    padding: 5px 10px;
+}
+.items1 .quantity>div>span>div{
+    font-weight: bolder;
+    color: var(--two);
+}
+
+.items1>table tr>td> span.btn{
+    display:flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    color: rgb(172, 3, 3);
+    border: none;
+}
+.items1 >table tr:first-child th{
+    /* background: #000; */
+    border: 1px solid rgb(238, 238, 238);
+
+}
+#borderTopLeft{
+    border-top-left-radius:15px;
+    border:none;
+    padding-left: 10px;
+    /* border-collapse: unset; */
+}
+#borderTopRight{
+    border-top-right-radius:15px;
+    border:none;
+    /* border-collapse: unset; */
+}
+.items2{
+    display: none;
+}
+.items2 .item .cancel i,.flex .btn i{
+    background-color: var(--one);
+    border-radius: 100%;
+    height: 30px;
+    width:30px;
+    line-height: 30px;
+    text-align: center;
+}
+@media screen and (max-width:1200px) {
+    .items1{
+        display:none;
+    }
+    .items2{
+        display: unset;
+    }
+    .items2 .quantity{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .items2 .quantity div h5{
+        height:fit-content;
+        margin:1rem 1rem 1rem 0rem;
+        font-weight: 500;
+        font-size: 1rem;
+        color: var(--two);
+    }
+    .items2 .quantity input{
+        font-weight: bolder;
+        color: var(--two);
+        min-width:60px ;
+        max-width:100px ;
+        border: 1px solid #aaaaaa27;
+        border-radius:15px;
+        justify-content: space-between;
+        height: 50px;
+        padding: 5px 10px;
+    }
+    .items2 img{
+        float: right;
+    }
+    .items2 .item{
+        margin: 10px 5vw;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.089);
+    }
+    .items2 .item:last-child{
+        border-bottom:none;
+    }
+    .items2 .item > *:first-child{
+        justify-content: end;
+    }
+    .items2 .item > *{
+        margin: 20px 0;
+        justify-content:start;
+        align-items: start;
+        gap: 10px;
+    }
+    .items2 .item > div>span:first-child{
+        color: var(--two);
+        font-weight: 500;
+    }
+    .items2 .cancel{
+        color: rgb(172, 3, 3);
+        font-weight: 700;
+    }
+    .items2 .name span:last-child{
+        color: var(--two);
+        font-weight: 700;
+    }
+    .items2 .price span:last-child{
+        color: var(--one);
+    }
+
+}
+.bottom{
+    padding:50px 0 ;
+}
+.bottom>div>.coupon input{
+    border-radius: 35px;
+    height: 35px;
+    width: 300px;
+    border:1px solid rgba(0, 0, 0, 0.253);
+    padding: 0 50px 0 10px ;
+    outline: none;
+} 
+.bottom>div{
+    justify-content: space-between;
+    padding:0 5vw ;
+}
+.bottom>div>.coupon .btn{
+    border-radius: 35px;
+    height: 35px;
+    width: 150px;
+    transform: translateX(-49px);
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    color: rgb(255, 255, 255);
+    background: var(--two);
+} 
+.bottom>div>div:last-child .btn{
+    border-radius: 35px;
+    height: 35px;
+    width: 150px;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--two);
+    font-weight: bold;
+    background: var(--one);
+} 
+.bottom .total{
+    justify-content: end;
+    padding:0 5vw ;
+}
+.bottom .total table{
+    border-collapse: collapse;
+    color: var(--two);
+    margin: 10px 0;
+
+}
+.bottom .total table td,.bottom .total table th{
+    border: 1px solid rgba(0, 0, 0, 0.13);
+    padding:20px 30px ; 
+}
+.bottom .total>table td.btn{
+    border: none;
+    border-radius: 35px;
+    height: 35px;
+    width: 150px;
+    text-align: center;
+    transform: translateY(20px);
+    color: var(--two);
+    font-weight: bold;
+    background: var(--one);
+}
+@media screen and (max-width:1200px) {
+    .bottom>div>.coupon,.main .bottom>div:first-child{
+        flex-direction: column;
+    }
+    .bottom>div>.coupon .btn {
+        width: 100%;
+        margin: 5px 0;
+        transform: translateX(0px);
+    } 
+    .bottom>div>div:last-child .btn{
+        background: none;
+        color:var(--one);
+    } 
+    .bottom .total table{
+        width: 100vw;
+    }
+    .bottom .total table td,.bottom .total table th{
+        border: none;
+    }
+}

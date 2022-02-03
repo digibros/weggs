@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700&family=Poppins:wght@200;300;400&family=Roboto:wght@300&display=swap');
+
+:root{
+    --one:#e8bc5a;
+    --two:#0A306C;
+}
+* a{
+    text-decoration: none;
+    color:inherit;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Asap','Poppins','Roboto';
+  
+  }
+
+/* ---------------------blue navbar------------------------ */
+.subnav {
+    width: 100%;
+    height: 45px;
+    justify-content:initial;
+    background: var(--two);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.flex
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.subnav .left{
+    color: #fff;
+    margin: 0 0 0 50px ;
+    font-size: 0.8em;
+    
+}
+.subnav .left i{
+    color: white;
+}
+.subnav .right i{
+    color: white;
+}
+.subnav .left div{
+    margin: 0 20px ;
+    transition: 100ms;
+}
+.subnav .left div:hover{
+    color: #e9ad2c;
+}
+.subnav .left div i{
+    margin: 0 7px ;
+}
+.subnav .right{
+    color: #fff;
+    font-size: 0.8em;
+    margin:0 50px 0 auto;
+}
+.subnav .right a{
+    color: #fff;
+    margin: 0 0 0 30px;
+}
+.subnav .right i:hover{
+    color: #fff;
+}
+/* --------------------------main Navbar----------------------------- */
+.mainnav{
+    height: 100px;
+    width: 100%;
+    font-family: Helvetica, sans-serif;
+    background: #fff;
+    position: fixed;
+    top: 45px;
+    z-index: 1000;
+    box-shadow:0px -3px 10px gray;
+}
+.main{
+    margin-top: 8rem;
+}
+.navbar .title {
+    color:var(--one);
+    margin: 0 auto 0 70px;
+    font-weight: 700;
+    font-size: 2.5em;
+    display: inline-block;
+    line-height: 3rem;
+}
+.navbar .title img{
+    width: 3rem;transform: translateY(1rem);
+}
+.navbar .title span:first-child{
+    color: var(--two);
+}
+.navbar .title span:last-child{
+    font-size: 0.4em;
+    position: absolute;
+    transform: translate(-70px,45px);    
+}
+.mainnav .middle{
+    margin: 0 auto;
+}
+.mainnav .middle>a,.mainnav .middle>div>a{
+    color:var(--two);
+    text-decoration: none;
+    font-size: 1.0em;
+    margin: 0 20px ;
+    transition: 500ms;
+    font-weight: 700;
+    
+}
+.mainnav .middle a:hover,.mainnav .middle div a:hover{
+    color: var(--one);
+}
+.mainnav .middle div>a i,.mainnav .middle div div i{
+    color: var(--one);
+    font-size: 0.8em;
+    margin: 0 0 0 7px ;
+}
+.mainnav .right{
+    margin: 0 50px 0 auto;
+}
+.mainnav .right > div{
+    margin: 0 0 0 50px;
+    color: var(--two);
+    font-size: 1.0em;
+}
+.mainnav .right .searchbar{
+    background: #fff;
+        width: 150px;
+        height: 30px;
+        border-radius: 30px;
+        /* margin: 30px 0; */
+        border: 2px solid var(--two);
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        position: relative;
+}
+.mainnav .right .searchbar i{
+    position: absolute;
+    right: 5px;
+    cursor: pointer;
+}
+.mainnav .right .searchbar input{
+    border:none ;
+        outline: none;
+        height: 30px;
+        padding-left:5px ;
+        width: 110px;
+        border-radius: 30px;
+}
+.mainnav .right .bag .counter{
+    border-radius: 100%;
+    background: var(--two);
+    margin: 0 10px;
+    color: #fff;
+    font-size: 0.7em;
+    width: 30px;
+    height: 30px;
+}
+/* -------------------------dropdown mechs & pos----------------- */
+
+.mainnav>.middle>.dropdown:hover>.drop{
+    opacity: 1;
+    pointer-events: all;
+    transform: translate(-70px,0px);
+    z-index: 100;
+}
+.mainnav>.middle>.dropdown>.drop{
+    position: absolute;
+    opacity: 0;
+    transform: translate(-70px,10px);
+    pointer-events: none;
+    padding: 10px;
+    display: grid;
+    transition: 400ms;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.233);
+    height: min-content;
+    min-width: 250px;
+    border-radius: 20px;
+}
+.mainnav .middle>.dropdown>.drop>a,.mainnav .middle>.dropdown>.drop>div{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 20px;
+    height: 40px;
+    font-weight: 700;
+    color: var(--two);
+    border-radius: 30px;
+}
+.mainnav .middle .dropdown>.drop div:hover .subdrop{
+    opacity: 1;
+    pointer-events: all;
+    transform: translate(-280px,10px);
+
+}
+.mainnav .middle .dropdown>.drop div .subdrop{
+    position: absolute;
+    opacity: 0;
+    transform: translate(-280px,20px);
+    pointer-events: none;
+    padding: 10px;
+    display: grid;
+    transition: 400ms;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.233);
+    height: min-content;
+    min-width: 250px;
+    border-radius: 20px;
+}
+.mainnav .middle .dropdown>.drop div .subdrop a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 20px;
+    height: 40px;
+    font-weight: 700;
+    color: var(--two);
+    border-radius: 30px;
+}
+.mainnav .middle .dropdown >.drop a:hover,.mainnav .middle .dropdown>.drop>div:hover{
+    background: var(--one);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* ---------------display adjustment for navs--------------------- */
+.mainnav2{
+    display: none;
+}
+.sidemenu{
+    display: none;
+}
+/* -------------------------mobile navbar------------------------ */
+
+@media screen and (max-width:1200px) {
+    /* -----------open function----------- */
+    .sidemenu{
+        opacity: 0;
+        display: unset;
+        transform: translateX(-100vw);
+        pointer-events: none;
+        z-index: 100;
+    }
+    .open{
+        opacity: 1;
+        transform: translateX(0);
+        pointer-events: all;
+    }
+    .main{
+        margin-top: 5rem;
+    }
+    .navbar{
+        display: none;
+    }
+    .mainnav2{
+        display: flex;
+        position: fixed;
+        top: 0;
+        z-index: 999;
+        left: 0;
+        width: 100%;
+    }
+    .navbar2 .title2 {
+        color:var(--one);
+    font-weight: 700;
+    font-size: 2.5em;
+    display: inline-block;
+    transform: translateY(-1rem);
+    margin: 0 auto;
+    }
+    .navbar2 .title2 img{
+        width: 3rem;
+        transform: translateY(1rem);
+    }
+    .navbar2 .title2 span:first-child{
+        color: var(--two);
+    }
+    .navbar2 .title2 span:last-child{
+        font-size: 0.4em;
+        position: absolute;
+        transform: translate(-73px,45px);    
+    }
+    #menuBtn{
+        position: absolute;
+        margin: 0 20px;
+    }
+    #menuBtn div{
+        width: 32px;
+        height: 3px;
+        transition: 300ms;
+        margin:7px 0 ;
+        border-radius: 10px;
+        background  :var(--two);
+    }
+    #menuBtn:hover #menu-hover {
+        width:20px;
+    }
+
+    .mainnav2{
+        background: #fff;
+        justify-content: unset;
+        height: 100px;
+    }
+    #menuBtnClose{
+        color: white;
+        font-size: 2.5em;
+        padding: 30px 25px ;
+    }
+    .sidemenu{
+        background: var(--two);
+        position: absolute;
+        top: 0;
+        transition: 200ms;
+        width: 100%;
+        height: 100vh;
+        overflow: auto;
+        z-index: 1000;
+    }
+    .sidemenu .middle>a,.sidemenu .middle>div>a{
+        color:#fff;
+        display: block;
+        transition: 200ms ;
+        text-decoration: none;
+        font-size: 1.5em;
+        margin: 15px 30px ;
+        font-weight: 700;       
+    }
+    
+    .sidemenu .middle .dropdown a i{
+        float: right;
+    }
+    .sidemenu .middle div a span{
+        margin: 0 30px 0 0;
+        color: #fff;
+    }
+    .sidemenu .bottom {
+        margin: 20px auto;
+        width:300px ;
+    }
+    .sidemenu .bottom > div:first-child{
+        justify-content: space-evenly;
+        padding: 5px 0;
+        color: #fff;
+        font-size:1.2em ;    
+        margin-top: 1rem;
+    }
+    .sidemenu .bottom .counter{
+        font-size:0.8em ;    
+        height: 20px;
+        padding: 0 10px;
+        color: #fff;
+    }
+    .sidemenu .bottom .searchbar{
+        background: #fff;
+        width: 300px;
+        height: 50px;
+        border-radius: 30px;
+        margin: 30px 0;
+        
+    }
+    .sidemenu .bottom .searchbar input{
+        border:none ;
+        outline: none;
+        height: 50px;
+        padding-left:5px ;
+    }
+    .sidemenu .bottom .searchbar i{
+        padding-left:50px ;
+    }
+    .sidemenu .bottom a{
+        color: #fff;
+        font-size: 1.3rem;
+        cursor: pointer;
+    }
+    .sidemenu .bottom .flex a{
+        color: #fff;
+        font-size: 1.3rem;
+        cursor: pointer;
+        display: flex;
+    }
+    /* ------------------------sidemenu dropdown------------------------- */
+    
+    .sidemenu details * {
+        user-select: none;
+    }
+    .sidemenu details {
+        margin: 20px 0;
+    }
+    .sidemenu details > summary {
+        /* list-style-type: none; */
+        user-select: none;
+    }
+    .new-details a{
+        color:#fff;
+        display: block;
+        transition: 200ms ;
+        text-decoration: none;
+        font-size: 1.5em;
+        margin: 20px 30px ;
+        font-weight: 700;   
+    }
+    .new-details .new-drop{
+        padding-left: 1rem;
+        display: none;
+    }
+    .new-details .new-drop.open{
+        padding-left: 2rem;
+        display: block;
+    }
+    #spin{
+        padding-left: 15px;
+        transform: rotate(0deg);
+        transition: .1s;
+    }
+    
+    #spin.spin{
+        transition: .1s;
+        padding-left: 20px;
+        transform: rotate(90deg);
+    }
+    .sidemenu details >div{
+        display: grid;
+    }
+    .sidemenu details >div>a{
+        color:#fff;
+        /* display: block; */
+        transition: 200ms ;
+        text-decoration: none;
+        font-size: 1.4em;
+        margin: 2.5px 0 2.5px 60px ;
+        font-weight: 700; 
+    }
+    .sidemenu details >div>.subdetails{
+        margin: 2.5px 0 2.5px 45px ;
+    }
+    
+    summary>a{
+        color:#fff;
+        /* display: block; */
+        /* transition: 1000ms ; */
+        text-decoration: none;
+        font-size: 1.5em;
+        margin: 20px 30px ;
+        font-weight: 700;   
+    }
+    .sidemenu details > summary::-webkit-details-marker {
+        display: none;
+    }
+    .sidemenu details summary a:hover,.sidemenu .middle a:hover{
+        color: #e9ad2c;
+    }
+}
+@media screen and (max-width:300px) {
+    .sidemenu .bottom .searchbar{
+        background: #fff;
+        width: 220px;
+        height: 50px;
+        border-radius: 30px;
+        margin: 30px 0;
+        
+    }
+    .sidemenu .bottom .searchbar input{
+        width: 100px;
+        
+    }
+    .sidemenu .bottom {
+        margin: 20px auto;
+        width:220px ;
+    }
+}
+.sidemenu.open{
+    overflow: hidden;
+    position: fixed;
+
+}
